@@ -6,11 +6,11 @@
 /*   By: magrinbe <magrinbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/13 13:36:49 by magrinbe          #+#    #+#             */
-/*   Updated: 2018/11/13 13:57:38 by magrinbe         ###   ########.fr       */
+/*   Updated: 2018/11/14 15:49:05 by magrinbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*strcpy(char *dest, char *src)
+char	*ft_strcpy(char *dest, char *src)
 {
 	int i;
 

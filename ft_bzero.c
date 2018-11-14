@@ -6,13 +6,13 @@
 /*   By: magrinbe <magrinbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/13 19:23:48 by magrinbe          #+#    #+#             */
-/*   Updated: 2018/11/13 20:19:20 by magrinbe         ###   ########.fr       */
+/*   Updated: 2018/11/14 15:48:36 by magrinbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 
-void	bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
 	char	*str;
 	int		i;
