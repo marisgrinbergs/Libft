@@ -1,27 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_strdel.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: magrinbe <magrinbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/13 19:23:48 by magrinbe          #+#    #+#             */
-/*   Updated: 2018/11/16 21:45:55 by magrinbe         ###   ########.fr       */
+/*   Created: 2018/11/15 16:35:44 by magrinbe          #+#    #+#             */
+/*   Updated: 2018/11/16 21:47:45 by magrinbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_bzero(void *s, size_t n)
+void	ft_strdel(char **as)
 {
-	char	*str;
-	int		i;
-
-	i = 0;
-	str = s;
-	while (n--)
+	if (as)
 	{
-		str[i] = '\0';
-		i++;
+		free(*as);
+		*as = NULL;
 	}
 }

@@ -6,9 +6,11 @@
 /*   By: magrinbe <magrinbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/13 14:00:43 by magrinbe          #+#    #+#             */
-/*   Updated: 2018/11/13 16:28:06 by magrinbe         ###   ########.fr       */
+/*   Updated: 2018/11/16 21:46:09 by magrinbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int		ft_isalpha(int c)
 {

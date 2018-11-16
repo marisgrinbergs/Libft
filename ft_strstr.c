@@ -6,9 +6,11 @@
 /*   By: magrinbe <magrinbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/13 13:59:09 by magrinbe          #+#    #+#             */
-/*   Updated: 2018/11/13 13:59:12 by magrinbe         ###   ########.fr       */
+/*   Updated: 2018/11/16 21:52:36 by magrinbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int		ft_strcmp(char *s1, char *s2)
 {
@@ -26,7 +28,7 @@ int		ft_strcmp(char *s1, char *s2)
 	return (0);
 }
 
-int		ft_strncmp(const char *s1, const char *s2, int n)
+int		ft_boolean(const char *s1, const char *s2, int n)
 {
 	int i;
 

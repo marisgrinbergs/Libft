@@ -6,9 +6,11 @@
 /*   By: magrinbe <magrinbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/13 20:20:34 by magrinbe          #+#    #+#             */
-/*   Updated: 2018/11/13 20:29:27 by magrinbe         ###   ########.fr       */
+/*   Updated: 2018/11/16 21:50:02 by magrinbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int		ft_tolower(int c)
 {

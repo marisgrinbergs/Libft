@@ -6,9 +6,11 @@
 /*   By: magrinbe <magrinbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/13 13:26:21 by magrinbe          #+#    #+#             */
-/*   Updated: 2018/11/13 13:30:48 by magrinbe         ###   ########.fr       */
+/*   Updated: 2018/11/16 21:45:43 by magrinbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int		ft_atoi(const char *str)
 {

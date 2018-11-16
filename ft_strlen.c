@@ -6,9 +6,11 @@
 /*   By: magrinbe <magrinbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/13 13:19:01 by magrinbe          #+#    #+#             */
-/*   Updated: 2018/11/13 13:19:05 by magrinbe         ###   ########.fr       */
+/*   Updated: 2018/11/16 21:48:08 by magrinbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int		ft_strlen(char *str)
 {

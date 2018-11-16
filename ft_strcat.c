@@ -6,9 +6,11 @@
 /*   By: magrinbe <magrinbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/13 14:02:27 by magrinbe          #+#    #+#             */
-/*   Updated: 2018/11/13 14:02:44 by magrinbe         ###   ########.fr       */
+/*   Updated: 2018/11/16 21:47:19 by magrinbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strcat(char *dest, char *src)
 {

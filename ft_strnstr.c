@@ -6,12 +6,11 @@
 /*   By: magrinbe <magrinbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/13 16:45:25 by magrinbe          #+#    #+#             */
-/*   Updated: 2018/11/13 18:29:45 by magrinbe         ###   ########.fr       */
+/*   Updated: 2018/11/16 21:49:49 by magrinbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
+#include "libft.h"
 
 int		ft_strcmp(char *s1, char *s2)
 {
@@ -73,18 +72,3 @@ char	*ft_strnstr(char *str, char *to_find, int len)
 	}
 	return (NULL);
 }
-
-int	main(void)
-{
-	char str[50];
-	char find[50];
-	strcpy(str, "bonjour a toitoi camrade");
-	strcpy(find, "toi");
-	printf("%lu\n", strlen(str));
-	printf("vrai : %s\n", strnstr(str, find, 13));
-	printf("mien : %s\n", ft_strnstr(str, find, 13));
-
-
-	return (0);
-}
-

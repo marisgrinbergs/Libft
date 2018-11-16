@@ -6,9 +6,11 @@
 /*   By: magrinbe <magrinbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/13 13:24:14 by magrinbe          #+#    #+#             */
-/*   Updated: 2018/11/13 13:24:16 by magrinbe         ###   ########.fr       */
+/*   Updated: 2018/11/16 21:47:33 by magrinbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int		ft_strcmp(char *s1, char *s2)
 {

@@ -6,11 +6,11 @@
 /*   By: magrinbe <magrinbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/13 16:08:12 by magrinbe          #+#    #+#             */
-/*   Updated: 2018/11/13 16:44:47 by magrinbe         ###   ########.fr       */
+/*   Updated: 2018/11/16 21:47:23 by magrinbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 char	*ft_strchr(char *s, int c)
 {

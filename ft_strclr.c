@@ -1,27 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_strclr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: magrinbe <magrinbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/13 19:23:48 by magrinbe          #+#    #+#             */
-/*   Updated: 2018/11/16 21:45:55 by magrinbe         ###   ########.fr       */
+/*   Created: 2018/11/15 16:42:23 by magrinbe          #+#    #+#             */
+/*   Updated: 2018/11/16 21:47:28 by magrinbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_bzero(void *s, size_t n)
+void	ft_strclr(char *s)
 {
-	char	*str;
 	int		i;
 
 	i = 0;
-	str = s;
-	while (n--)
+	while (s[i])
 	{
-		str[i] = '\0';
+		s[i] = '\0';
 		i++;
 	}
 }

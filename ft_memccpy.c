@@ -6,11 +6,11 @@
 /*   By: magrinbe <magrinbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/13 20:36:38 by magrinbe          #+#    #+#             */
-/*   Updated: 2018/11/14 21:09:59 by magrinbe         ###   ########.fr       */
+/*   Updated: 2018/11/16 21:46:41 by magrinbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 void	*ft_memccpy(void *dest, const void *src, int c, size_t n)
 {

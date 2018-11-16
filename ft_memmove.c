@@ -6,11 +6,11 @@
 /*   By: magrinbe <magrinbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/14 16:40:14 by magrinbe          #+#    #+#             */
-/*   Updated: 2018/11/14 18:17:50 by magrinbe         ###   ########.fr       */
+/*   Updated: 2018/11/16 21:47:10 by magrinbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
