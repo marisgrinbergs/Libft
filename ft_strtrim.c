@@ -6,7 +6,7 @@
 /*   By: magrinbe <magrinbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/17 20:26:48 by magrinbe          #+#    #+#             */
-/*   Updated: 2018/11/19 16:14:47 by magrinbe         ###   ########.fr       */
+/*   Updated: 2018/11/19 16:24:30 by magrinbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,15 +17,6 @@ static int	ft_isblanc(int c)
 	if (c == ' ' || c == '\t' || c == '\n')
 		return (1);
 	return (0);
-}
-int		ft_strlen(char *str)
-{
-	int i;
-
-	i = 0;
-	while (str[i])
-		i++;
-	return (i);
 }
 
 char		*ft_strtrim(char const *s)

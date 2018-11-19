@@ -6,7 +6,7 @@
 /*   By: magrinbe <magrinbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/16 17:17:38 by magrinbe          #+#    #+#             */
-/*   Updated: 2018/11/19 15:54:04 by magrinbe         ###   ########.fr       */
+/*   Updated: 2018/11/19 16:25:49 by magrinbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,7 +81,7 @@ int					ft_atoi(const char *str);
 void				*ft_memset(void *str, int value, int num);
 void				*ft_memcpy(void *dst, const void *src, int n);
 void				*ft_memccpy(void *dst, const void *src, int c, int n);
-void				ft_bzero(void *s, int n);
+void				ft_bzero(void *s, size_t n);
 void				*ft_memmove(void *dst, const void *src, int len);
 void				*ft_memchr(const void *s, int c, int n);
 int					ft_memcmp(const void *s1, const void *s2, int n);
