@@ -6,7 +6,7 @@
 /*   By: magrinbe <magrinbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/19 16:36:44 by magrinbe          #+#    #+#             */
-/*   Updated: 2018/11/19 21:12:20 by magrinbe         ###   ########.fr       */
+/*   Updated: 2018/11/19 21:50:07 by magrinbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int		ft_strlenl(const char *str, char c)
 	j = 0;
 	while (str[i])
 	{
-		if (str[i] == c && str[i + 1] != c)
+		if ((str[i - 1] == c || i == 0) && str[i] != c)
 			j++;
 		i++;
 	}
@@ -45,34 +45,33 @@ char	**ft_strsplit(char const *s, char c)
 	int		o;
 
 	i = 0;
-	if (!(tab = (char **)malloc(sizeof(char *) * (ft_strlenl(s, c) + 2))))
+	o = 0;
+	if (!(tab = (char **)malloc(sizeof(char *) * (ft_strlenl(s, c) + 1))))
 		return (NULL);
-	tab[ft_strlenl(s, c) + 1] = 0;
-	printf("%d\n", ft_strlenl(s, c) + 1);
 	while (s[i] == c)
 		i++;
-	while (tab[o])
-		tab[o++] = (char*)malloc(sizeof(char) * ft_strlen((char*)s));
-	o = 0;
-	while (tab[o++])
+	while (o < ft_strlenl(s, c))
 	{
 		j = 0;
+		tab[o] = (char*)malloc(sizeof(char) * ft_strlen((char*)s));
 		while (s[i] && s[i] != c)
 			tab[o][j++] = s[i++];
 		while (s[i] && s[i] == c)
 			i++;
 		tab[o][j] = '\0';
+		o++;
 	}
+	tab[o] = 0;
 	return (tab);
 }
 
 int main()
 {
-	char s[100];
+	char s[100000];
 	char **z;
 
-	strcpy(s, " hi  my name is tristan23 ");
-	z = ft_strsplit(s, ' ');
+	strcpy(s, " hi there        ccc gjshgkjdfh kjhksdhgjkdshglkjhkjhklhdsfg        jkghdlskghdl  l hkfhg a a a a a dhjhsdakfljhsdk f sdklfjhaslkjfh askljfhkalsfh ksd hflkasjh fkljsdhflkjasdh flkash fkjshfkljahsflkahsd lkfj hasdkljf haslkdjf hsalkjd fs ");
+	z = ft_strsplit(s, ' ');	
 
 	int i = 0;
 	while (z[i])
