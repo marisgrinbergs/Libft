@@ -6,7 +6,7 @@
 /*   By: magrinbe <magrinbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/19 16:36:44 by magrinbe          #+#    #+#             */
-/*   Updated: 2018/11/19 21:50:07 by magrinbe         ###   ########.fr       */
+/*   Updated: 2018/11/19 21:51:10 by magrinbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,7 +70,7 @@ int main()
 	char s[100000];
 	char **z;
 
-	strcpy(s, " hi there        ccc gjshgkjdfh kjhksdhgjkdshglkjhkjhklhdsfg        jkghdlskghdl  l hkfhg a a a a a dhjhsdakfljhsdk f sdklfjhaslkjfh askljfhkalsfh ksd hflkasjh fkljsdhflkjasdh flkash fkjshfkljahsflkahsd lkfj hasdkljf haslkdjf hsalkjd fs ");
+	strcpy(s, " hi there");
 	z = ft_strsplit(s, ' ');	
 
 	int i = 0;
