@@ -6,7 +6,7 @@
 /*   By: magrinbe <magrinbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/19 16:36:44 by magrinbe          #+#    #+#             */
-/*   Updated: 2018/11/19 21:51:10 by magrinbe         ###   ########.fr       */
+/*   Updated: 2018/11/19 21:51:48 by magrinbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ int		ft_strlenl(const char *str, char c)
 	}
 	return (j);
 }
+
 int		ft_strlen(char *str)
 {
 	int i;
