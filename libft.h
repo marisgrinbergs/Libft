@@ -6,7 +6,7 @@
 /*   By: magrinbe <magrinbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/16 17:17:38 by magrinbe          #+#    #+#             */
-/*   Updated: 2018/11/21 18:12:03 by magrinbe         ###   ########.fr       */
+/*   Updated: 2018/11/22 18:53:23 by magrinbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,6 +90,5 @@ void				ft_putendl_fd(char const *s, int fd);
 void				ft_putnbr_fd(int n, int fd);
 char				*ft_itoa(int n);
 void				ft_strdel(char **as);
-
 
 #endif

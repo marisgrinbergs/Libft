@@ -6,7 +6,7 @@
 /*   By: magrinbe <magrinbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/16 18:05:04 by magrinbe          #+#    #+#             */
-/*   Updated: 2018/11/21 17:54:02 by magrinbe         ###   ########.fr       */
+/*   Updated: 2018/11/22 19:07:01 by magrinbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_strmap(char const *s, char (*f)(char))
 	char	*str;
 	int		i;
 
+	if (!f || !s)
+		return (NULL);
 	i = 0;
 	str = (char *)malloc(sizeof(char) * (ft_strlen((char *)s) + 1));
 	if (!str)

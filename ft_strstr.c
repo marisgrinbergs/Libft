@@ -6,13 +6,13 @@
 /*   By: magrinbe <magrinbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/13 13:59:09 by magrinbe          #+#    #+#             */
-/*   Updated: 2018/11/22 14:32:57 by magrinbe         ###   ########.fr       */
+/*   Updated: 2018/11/22 19:24:33 by magrinbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_boolean(const char *s1, const char *s2, int n)
+static	int		ft_boolean(const char *s1, const char *s2, int n)
 {
 	int i;
 
@@ -26,7 +26,7 @@ int		ft_boolean(const char *s1, const char *s2, int n)
 	return (0);
 }
 
-char	*ft_strstr(const char *str, const char *to_find)
+char			*ft_strstr(const char *str, const char *to_find)
 {
 	int i;
 

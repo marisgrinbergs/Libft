@@ -6,7 +6,7 @@
 /*   By: magrinbe <magrinbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/17 20:26:48 by magrinbe          #+#    #+#             */
-/*   Updated: 2018/11/22 16:00:57 by magrinbe         ###   ########.fr       */
+/*   Updated: 2018/11/22 19:14:48 by magrinbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,8 @@ char			*ft_strtrim(char const *s)
 
 	i = 0;
 	j = 0;
+	if (!s)
+		return (NULL);
 	len = ft_strlenlol(s);
 	str = (char *)malloc(sizeof(char) * (len + 1));
 	if (str == NULL)
@@ -48,11 +50,7 @@ char			*ft_strtrim(char const *s)
 	while (len > i && ft_isblanc(s[len]) == 1)
 		len--;
 	while (i <= len)
-	{
-		str[j] = s[i];
-		i++;
-		j++;
-	}
+		str[j++] = s[i++];
 	str[j] = '\0';
 	return (str);
 }

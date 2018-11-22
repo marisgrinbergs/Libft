@@ -6,19 +6,21 @@
 /*   By: magrinbe <magrinbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/19 16:36:44 by magrinbe          #+#    #+#             */
-/*   Updated: 2018/11/21 17:49:49 by magrinbe         ###   ########.fr       */
+/*   Updated: 2018/11/22 19:20:56 by magrinbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_strlenl(const char *str, char c)
+static	int		ft_strlenl(const char *str, char c)
 {
 	int i;
 	int j;
 
 	i = 0;
 	j = 0;
+	if (!str)
+		return (0);
 	while (str[i])
 	{
 		if ((str[i - 1] == c || i == 0) && str[i] != c)
@@ -28,7 +30,7 @@ int		ft_strlenl(const char *str, char c)
 	return (j);
 }
 
-char	**ft_strsplit(char const *s, char c)
+char			**ft_strsplit(char const *s, char c)
 {
 	char	**tab;
 	int		i;
@@ -37,7 +39,8 @@ char	**ft_strsplit(char const *s, char c)
 
 	i = 0;
 	o = 0;
-	if (!(tab = (char **)malloc(sizeof(char *) * (ft_strlenl(s, c) + 1))))
+	tab = (char **)malloc(sizeof(char *) * (ft_strlenl(s, c) + 1));
+	if (!s || !tab)
 		return (NULL);
 	while (s[i] == c)
 		i++;

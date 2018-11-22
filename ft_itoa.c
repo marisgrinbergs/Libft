@@ -6,13 +6,13 @@
 /*   By: magrinbe <magrinbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/20 16:26:12 by magrinbe          #+#    #+#             */
-/*   Updated: 2018/11/21 15:53:43 by magrinbe         ###   ########.fr       */
+/*   Updated: 2018/11/22 19:22:37 by magrinbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		len(long nb)
+static	int		len(long nb)
 {
 	int		len;
 
@@ -30,7 +30,7 @@ int		len(long nb)
 	return (len);
 }
 
-char	*ft_itoa(int nb)
+char			*ft_itoa(int nb)
 {
 	char	*str;
 	long	n;

@@ -6,7 +6,7 @@
 /*   By: magrinbe <magrinbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/16 22:36:54 by magrinbe          #+#    #+#             */
-/*   Updated: 2018/11/22 14:36:02 by magrinbe         ###   ########.fr       */
+/*   Updated: 2018/11/22 19:08:26 by magrinbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ int	ft_strequ(char const *s1, char const *s2)
 {
 	int		i;
 
+	if (!s1 || !s2)
+		return (0);
 	i = 0;
 	while (s1[i] && s2[i] && s1[i] == s2[i])
 		i++;

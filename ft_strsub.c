@@ -6,7 +6,7 @@
 /*   By: magrinbe <magrinbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/17 19:42:24 by magrinbe          #+#    #+#             */
-/*   Updated: 2018/11/21 20:38:01 by magrinbe         ###   ########.fr       */
+/*   Updated: 2018/11/22 19:09:16 by magrinbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len)
 
 	i = 0;
 	str = (char *)malloc(sizeof(char) * (len + 1));
-	if (str == NULL)
+	if (!str || !s)
 		return (NULL);
 	while (i < len)
 	{
