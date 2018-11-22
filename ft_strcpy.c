@@ -6,13 +6,13 @@
 /*   By: magrinbe <magrinbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/13 13:36:49 by magrinbe          #+#    #+#             */
-/*   Updated: 2018/11/16 21:47:37 by magrinbe         ###   ########.fr       */
+/*   Updated: 2018/11/21 17:18:11 by magrinbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strcpy(char *dest, char *src)
+char	*ft_strcpy(char *dest, const char *src)
 {
 	int i;
 

@@ -6,13 +6,13 @@
 /*   By: magrinbe <magrinbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/13 13:17:40 by magrinbe          #+#    #+#             */
-/*   Updated: 2018/11/16 21:47:49 by magrinbe         ###   ########.fr       */
+/*   Updated: 2018/11/21 17:18:52 by magrinbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(char *src)
+char	*ft_strdup(const char *src)
 {
 	int		i;
 	char	*tab;

@@ -1,31 +1,60 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnew.c                                        :+:      :+:    :+:   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: magrinbe <magrinbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/15 16:17:11 by magrinbe          #+#    #+#             */
-/*   Updated: 2018/11/21 20:44:32 by magrinbe         ###   ########.fr       */
+/*   Created: 2018/11/20 16:26:12 by magrinbe          #+#    #+#             */
+/*   Updated: 2018/11/21 15:53:43 by magrinbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnew(size_t size)
+int		len(long nb)
+{
+	int		len;
+
+	len = 0;
+	if (nb < 0)
+	{
+		nb = nb * -1;
+		len++;
+	}
+	while (nb > 0)
+	{
+		nb = nb / 10;
+		len++;
+	}
+	return (len);
+}
+
+char	*ft_itoa(int nb)
 {
 	char	*str;
-	size_t	i;
+	long	n;
+	int		i;
 
-	str = (char*)malloc(sizeof(char) * (size + 1));
-	i = 0;
-	if (str == NULL)
+	n = nb;
+	i = len(n);
+	if (!(str = (char*)malloc(sizeof(char) * (i + 1))))
 		return (NULL);
-	while (i < size)
+	str[i--] = '\0';
+	if (n == 0)
 	{
-		str[i] = '\0';
-		i++;
+		str[0] = 48;
+		return (str);
 	}
-	str[i] = '\0';
+	if (n < 0)
+	{
+		str[0] = '-';
+		n = n * -1;
+	}
+	while (n > 0)
+	{
+		str[i--] = 48 + (n % 10);
+		n = n / 10;
+	}
 	return (str);
 }

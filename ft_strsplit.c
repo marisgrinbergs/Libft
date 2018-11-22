@@ -6,7 +6,7 @@
 /*   By: magrinbe <magrinbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/19 16:36:44 by magrinbe          #+#    #+#             */
-/*   Updated: 2018/11/19 21:51:48 by magrinbe         ###   ########.fr       */
+/*   Updated: 2018/11/21 17:49:49 by magrinbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,16 +26,6 @@ int		ft_strlenl(const char *str, char c)
 		i++;
 	}
 	return (j);
-}
-
-int		ft_strlen(char *str)
-{
-	int i;
-
-	i = 0;
-	while (str[i])
-		i++;
-	return (i);
 }
 
 char	**ft_strsplit(char const *s, char c)
@@ -64,18 +54,4 @@ char	**ft_strsplit(char const *s, char c)
 	}
 	tab[o] = 0;
 	return (tab);
-}
-
-int main()
-{
-	char s[100000];
-	char **z;
-
-	strcpy(s, " hi there");
-	z = ft_strsplit(s, ' ');	
-
-	int i = 0;
-	while (z[i])
-		printf("|%s|\n", z[i++]);
-	return (0);
 }
