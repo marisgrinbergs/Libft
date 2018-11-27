@@ -6,7 +6,7 @@
 #    By: magrinbe <magrinbe@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/16 17:18:49 by magrinbe          #+#    #+#              #
-#    Updated: 2018/11/21 18:16:13 by magrinbe         ###   ########.fr        #
+#    Updated: 2018/11/27 15:43:00 by magrinbe         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -63,7 +63,13 @@ SRC		=	ft_atoi.c \
 		ft_strtrim.c \
 		ft_tolower.c \
 		ft_toupper.c \
-		ft_strdel.c
+		ft_strdel.c \
+		ft_lstnew.c \
+		ft_lstdelone.c \
+		ft_lstdel.c \
+		ft_lstiter.c \
+		ft_lstadd.c \
+		ft_lstmap.c
 
 FLAG	=	-Wall -Wextra -Werror
 

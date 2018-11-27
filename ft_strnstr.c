@@ -6,7 +6,7 @@
 /*   By: magrinbe <magrinbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/13 16:45:25 by magrinbe          #+#    #+#             */
-/*   Updated: 2018/11/22 18:48:12 by magrinbe         ###   ########.fr       */
+/*   Updated: 2018/11/22 19:38:42 by magrinbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ char			*ft_strnstr(const char *str, const char *to_find, size_t n)
 		return (((char *)str));
 	if (ft_strlen(str) < ft_strlen(to_find))
 		return (0);
-	while (str[i] && i < n - 2)
+	while (str[i] && i < n)
 	{
 		if (ft_balls(&str[i], to_find, ft_strlen(to_find)) == 1)
 		{
